@@ -564,4 +564,7 @@ body {
     height: 100%;
     width: 200vh;
   }
+  .hero-section {
+    height: 60dvh;
+  }
 }
