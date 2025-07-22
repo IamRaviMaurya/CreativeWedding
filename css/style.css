@@ -1,8 +1,8 @@
 /********** Template CSS **********/
 :root {
-    --primary: #FFB6C1;
-    --light: #FFF0F5;
-    --dark: #8B5F7D;
+    --primary: #fffaf5;
+    --light: #fffaf5;
+    --dark: #5e7267 ;
 }
 
 .fw-medium {
@@ -23,6 +23,10 @@
     right: 45px;
     bottom: 45px;
     z-index: 99;
+}
+
+body {
+  background-color: var(--primary);
 }
 
 
