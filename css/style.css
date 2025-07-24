@@ -522,13 +522,6 @@ body {
     color: var(--primary);
 }
 
-.container-xxl.text-center img.img-fluid {
-    margin: 0;
-    padding: 0;
-    background: none;
-    box-shadow: none;
-}
-
 /* Base Section Styles */
 .hero-section {
   position: relative;
@@ -575,3 +568,4 @@ body {
     height: 32dvh;
   }
 }
+
