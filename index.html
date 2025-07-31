@@ -29,6 +29,15 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
@@ -48,7 +57,7 @@
 
 
     <!-- Hero Section with Topbar & Navbar Integrated Start -->
-    <section class="hero-section"> <!-- Vimeo Background Video -->
+    <section class="hero-section" id="home"> <!-- Vimeo Background Video -->
         <div class="hero-video-background">
             <div class="hero-video-wrapper">
                 <iframe src="https://player.vimeo.com/video/1103511061?background=1&autoplay=1&loop=1&muted=1"
@@ -96,7 +105,7 @@
         <!-- Topbar End -->
 
         <!-- Navbar Start -->
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
             <div class="container-fluid ">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -104,22 +113,18 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><span class="nav-link" style="color: #fffaf5; cursor: default;">Home</span>
+                        <li class="nav-item"><a class="nav-link" href="#home" style="color: #fffaf5; cursor: pointer;">Home</a>
                         </li>
-                        <li class="nav-item"><span class="nav-link"
-                                style="color: #fffaf5; cursor: default;">About</span></li>
-                        <li class="nav-item"><span class="nav-link"
-                                style="color: #fffaf5; cursor: default;">Services</span></li>
-                        <li class="nav-item"><span class="nav-link"
-                                style="color: #fffaf5; cursor: default;">Portfolio</span></li>
-                        <li class="nav-item"><span class="nav-link" style="color: #fffaf5; cursor: default;">Team</span>
+                        <li class="nav-item"><a class="nav-link" href="#about-section" style="color: #fffaf5; cursor:pointer ;">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services-section" style="color: #fffaf5; cursor: pointer;">Services</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="#portfolio-section" style="color: #fffaf5; cursor: pointer;">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team-section" style="color: #fffaf5; cursor: pointer;">Team</a>
                         </li>
-                        <li class="nav-item"><span class="nav-link" style="color: #fffaf5; cursor: default;">Book
-                                Us</span></li>
-                        <li class="nav-item"><span class="nav-link"
-                                style="color: #fffaf5; cursor: default;">Testimonials</span></li>
-                        <li class="nav-item"><span class="nav-link"
-                                style="color: #fffaf5; cursor: default;">Contact</span></li>
+                        <li class="nav-item"><a class="nav-link" href="#booking-section" style="color: #fffaf5; cursor: pointer;">Book
+                                Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#testimonials-section" style="color: #fffaf5; cursor: pointer;">Testimonials</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact-section" style="color: #fffaf5; cursor: pointer;">Contact</a></li>
                     </ul>
 
                 </div>
@@ -142,16 +147,16 @@
     </section>
     <!-- Hero Section with Topbar & Navbar Integrated End -->
 
-    <div class="container-xxl py-3 text-center">
+    <div class="container-xxl py-3 text-center" id="about-section">
         <img src="img/frame.png" alt="Decorative Frame" class="img-fluid"
             style="max-width: 300px; height: auto; display: inline-block;">
     </div>
 
     <!-- About Start -->
-<div class="container-fluid">
-  <div class="row g-5 mx-0">
-    <div class="col-12">
-      <div class="mx-auto text-center">
+    <div class="container-fluid">
+        <div class="row g-5 mx-0">
+            <div class="col-12">
+                <div class="mx-auto text-center">
                     <p class="d-inline-block border rounded-pill py-1 px-4 mb-3"
                         style="background: #5e7267; color: #FFF0F5; font-family: 'Roboto', sans-serif; letter-spacing: 2px; font-size: 1.1rem;">
                         About Us
@@ -201,14 +206,14 @@
     </div>
     <!-- About End -->
 
-    <div class="container-xxl py-3 text-center">
+    <div class="container-xxl py-3 text-center" id="services-section">
         <img src="img/frame.png" alt="Decorative Frame" class="img-fluid"
             style="max-width: 300px; height: auto; display: inline-block;">
     </div>
 
     <!-- Services Start -->
-<div class="container-fluid">
-  <div class="row g-5 mx-0">
+    <div class="container-fluid">
+        <div class="row g-5 mx-0">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                 <p class="d-inline-block border rounded-pill py-1 px-4" style="background: #5e7267; color: #FFF0F5 ;">
                     Wedding Services</p>
@@ -258,388 +263,426 @@
     </div>
     <!-- Services End -->
 
-    <div class="container-xxl py-3 text-center">
+    <div class="container-xxl py-3 text-center" id="portfolio-section">
         <img src="img/frame.png" alt="Decorative Frame" class="img-fluid"
             style="max-width: 300px; height: auto; display: inline-block;">
     </div>
 
     <!-- Portfolio Start -->
-<div class="container-fluid">
-    <div class="row g-5 mx-0">
-        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-            <p class="d-inline-block border rounded-pill py-1 px-4" style="background: #5e7267; color: #FFF0F5;">
-                Portfolio</p>
-            <h1 style="color: #5e7267;">Our Wedding Stories</h1>
+    <div class="container-fluid">
+        <div class="row g-5 mx-0">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block border rounded-pill py-1 px-4" style="background: #5e7267; color: #FFF0F5;">
+                    Portfolio</p>
+                <h1 style="color: #5e7267;">Our Wedding Stories</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/carousel-1.jpg" alt="Wedding Couple">
+                        <div class="portfolio-text bg-light text-center p-4">
+                            <h5 style="color: #5e7267;">A Magical Evening</h5>
+                            <p style="color: #5e7267;">Sunset wedding shoot with romantic vibes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="portfolio-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/carousel-2.jpg" alt="Wedding Ceremony">
+                        <div class="portfolio-text bg-light text-center p-4">
+                            <h5 style="color: #5e7267;">Traditional Elegance</h5>
+                            <p style="color: #5e7267;">Capturing rituals and family moments.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/carousel-3.jpg" alt="Reception Party">
+                        <div class="portfolio-text bg-light text-center p-4">
+                            <h5 style="color: #5e7267 ;">Reception Glam</h5>
+                            <p style="color: #5e7267 ;">Joyful celebrations and candid moments.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/about-1.jpg" alt="Wedding Couple">
+                        <div class="portfolio-text bg-light text-center p-4">
+                            <h5 style="color: #5e7267 ;">A Magical Evening</h5>
+                            <p style="color: #5e7267 ;">Sunset wedding shoot with romantic vibes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/about-2.jpg" alt="Wedding Ceremony">
+                        <div class="portfolio-text bg-light text-center p-4">
+                            <h5 style="color: #5e7267 ;">Traditional Elegance</h5>
+                            <p style="color: #5e7267 ;">Capturing rituals and family moments.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/carousel-3.jpg" alt="Reception Party">
+                        <div class="portfolio-text bg-light text-center p-4">
+                            <h5 style="color: #5e7267 ;">Reception Glam</h5>
+                            <p style="color: #5e7267 ;">Joyful celebrations and candid moments.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/carousel-1.jpg" alt="Wedding Couple">
+                        <div class="portfolio-text bg-light text-center p-4">
+                            <h5 style="color: #5e7267;">A Magical Evening</h5>
+                            <p style="color: #5e7267;">Sunset wedding shoot with romantic vibes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="portfolio-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/carousel-2.jpg" alt="Wedding Ceremony">
+                        <div class="portfolio-text bg-light text-center p-4">
+                            <h5 style="color: #5e7267;">Traditional Elegance</h5>
+                            <p style="color: #5e7267;">Capturing rituals and family moments.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/carousel-3.jpg" alt="Reception Party">
+                        <div class="portfolio-text bg-light text-center p-4">
+                            <h5 style="color: #5e7267 ;">Reception Glam</h5>
+                            <p style="color: #5e7267 ;">Joyful celebrations and candid moments.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/about-1.jpg" alt="Wedding Couple">
+                        <div class="portfolio-text bg-light text-center p-4">
+                            <h5 style="color: #5e7267 ;">A Magical Evening</h5>
+                            <p style="color: #5e7267 ;">Sunset wedding shoot with romantic vibes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/about-2.jpg" alt="Wedding Ceremony">
+                        <div class="portfolio-text bg-light text-center p-4">
+                            <h5 style="color: #5e7267 ;">Traditional Elegance</h5>
+                            <p style="color: #5e7267 ;">Capturing rituals and family moments.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/carousel-3.jpg" alt="Reception Party">
+                        <div class="portfolio-text bg-light text-center p-4">
+                            <h5 style="color: #5e7267 ;">Reception Glam</h5>
+                            <p style="color: #5e7267 ;">Joyful celebrations and candid moments.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/carousel-1.jpg" alt="Wedding Couple">
+                        <div class="portfolio-text bg-light text-center p-4">
+                            <h5 style="color: #5e7267;">A Magical Evening</h5>
+                            <p style="color: #5e7267;">Sunset wedding shoot with romantic vibes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="portfolio-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/carousel-2.jpg" alt="Wedding Ceremony">
+                        <div class="portfolio-text bg-light text-center p-4">
+                            <h5 style="color: #5e7267;">Traditional Elegance</h5>
+                            <p style="color: #5e7267;">Capturing rituals and family moments.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/carousel-3.jpg" alt="Reception Party">
+                        <div class="portfolio-text bg-light text-center p-4">
+                            <h5 style="color: #5e7267 ;">Reception Glam</h5>
+                            <p style="color: #5e7267 ;">Joyful celebrations and candid moments.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/about-1.jpg" alt="Wedding Couple">
+                        <div class="portfolio-text bg-light text-center p-4">
+                            <h5 style="color: #5e7267 ;">A Magical Evening</h5>
+                            <p style="color: #5e7267 ;">Sunset wedding shoot with romantic vibes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/about-2.jpg" alt="Wedding Ceremony">
+                        <div class="portfolio-text bg-light text-center p-4">
+                            <h5 style="color: #5e7267 ;">Traditional Elegance</h5>
+                            <p style="color: #5e7267 ;">Capturing rituals and family moments.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/carousel-3.jpg" alt="Reception Party">
+                        <div class="portfolio-text bg-light text-center p-4">
+                            <h5 style="color: #5e7267 ;">Reception Glam</h5>
+                            <p style="color: #5e7267 ;">Joyful celebrations and candid moments.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/carousel-1.jpg" alt="Wedding Couple">
+                        <div class="portfolio-text bg-light text-center p-4">
+                            <h5 style="color: #5e7267;">A Magical Evening</h5>
+                            <p style="color: #5e7267;">Sunset wedding shoot with romantic vibes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="portfolio-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/carousel-2.jpg" alt="Wedding Ceremony">
+                        <div class="portfolio-text bg-light text-center p-4">
+                            <h5 style="color: #5e7267;">Traditional Elegance</h5>
+                            <p style="color: #5e7267;">Capturing rituals and family moments.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/carousel-3.jpg" alt="Reception Party">
+                        <div class="portfolio-text bg-light text-center p-4">
+                            <h5 style="color: #5e7267 ;">Reception Glam</h5>
+                            <p style="color: #5e7267 ;">Joyful celebrations and candid moments.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/about-1.jpg" alt="Wedding Couple">
+                        <div class="portfolio-text bg-light text-center p-4">
+                            <h5 style="color: #5e7267 ;">A Magical Evening</h5>
+                            <p style="color: #5e7267 ;">Sunset wedding shoot with romantic vibes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/about-2.jpg" alt="Wedding Ceremony">
+                        <div class="portfolio-text bg-light text-center p-4">
+                            <h5 style="color: #5e7267 ;">Traditional Elegance</h5>
+                            <p style="color: #5e7267 ;">Capturing rituals and family moments.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/carousel-3.jpg" alt="Reception Party">
+                        <div class="portfolio-text bg-light text-center p-4">
+                            <h5 style="color: #5e7267 ;">Reception Glam</h5>
+                            <p style="color: #5e7267 ;">Joyful celebrations and candid moments.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/carousel-1.jpg" alt="Wedding Couple">
+                        <div class="portfolio-text bg-light text-center p-4">
+                            <h5 style="color: #5e7267;">A Magical Evening</h5>
+                            <p style="color: #5e7267;">Sunset wedding shoot with romantic vibes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="portfolio-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/carousel-2.jpg" alt="Wedding Ceremony">
+                        <div class="portfolio-text bg-light text-center p-4">
+                            <h5 style="color: #5e7267;">Traditional Elegance</h5>
+                            <p style="color: #5e7267;">Capturing rituals and family moments.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/carousel-3.jpg" alt="Reception Party">
+                        <div class="portfolio-text bg-light text-center p-4">
+                            <h5 style="color: #5e7267 ;">Reception Glam</h5>
+                            <p style="color: #5e7267 ;">Joyful celebrations and candid moments.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/about-1.jpg" alt="Wedding Couple">
+                        <div class="portfolio-text bg-light text-center p-4">
+                            <h5 style="color: #5e7267 ;">A Magical Evening</h5>
+                            <p style="color: #5e7267 ;">Sunset wedding shoot with romantic vibes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/about-2.jpg" alt="Wedding Ceremony">
+                        <div class="portfolio-text bg-light text-center p-4">
+                            <h5 style="color: #5e7267 ;">Traditional Elegance</h5>
+                            <p style="color: #5e7267 ;">Capturing rituals and family moments.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/carousel-3.jpg" alt="Reception Party">
+                        <div class="portfolio-text bg-light text-center p-4">
+                            <h5 style="color: #5e7267 ;">Reception Glam</h5>
+                            <p style="color: #5e7267 ;">Joyful celebrations and candid moments.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row g-4">
-            <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="portfolio-item rounded overflow-hidden">
-                    <img class="img-fluid" src="img/carousel-1.jpg" alt="Wedding Couple">
-                    <div class="portfolio-text bg-light text-center p-4">
-                        <h5 style="color: #5e7267;">A Magical Evening</h5>
-                        <p style="color: #5e7267;">Sunset wedding shoot with romantic vibes.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
-                <div class="portfolio-item rounded overflow-hidden">
-                    <img class="img-fluid" src="img/carousel-2.jpg" alt="Wedding Ceremony">
-                    <div class="portfolio-text bg-light text-center p-4">
-                        <h5 style="color: #5e7267;">Traditional Elegance</h5>
-                        <p style="color: #5e7267;">Capturing rituals and family moments.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="portfolio-item rounded overflow-hidden">
-                    <img class="img-fluid" src="img/carousel-3.jpg" alt="Reception Party">
-                    <div class="portfolio-text bg-light text-center p-4">
-                        <h5 style="color: #5e7267 ;">Reception Glam</h5>
-                        <p style="color: #5e7267 ;">Joyful celebrations and candid moments.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="portfolio-item rounded overflow-hidden">
-                    <img class="img-fluid" src="img/about-1.jpg" alt="Wedding Couple">
-                    <div class="portfolio-text bg-light text-center p-4">
-                        <h5 style="color: #5e7267 ;">A Magical Evening</h5>
-                        <p style="color: #5e7267 ;">Sunset wedding shoot with romantic vibes.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="portfolio-item rounded overflow-hidden">
-                    <img class="img-fluid" src="img/about-2.jpg" alt="Wedding Ceremony">
-                    <div class="portfolio-text bg-light text-center p-4">
-                        <h5 style="color: #5e7267 ;">Traditional Elegance</h5>
-                        <p style="color: #5e7267 ;">Capturing rituals and family moments.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="portfolio-item rounded overflow-hidden">
-                    <img class="img-fluid" src="img/carousel-3.jpg" alt="Reception Party">
-                    <div class="portfolio-text bg-light text-center p-4">
-                        <h5 style="color: #5e7267 ;">Reception Glam</h5>
-                        <p style="color: #5e7267 ;">Joyful celebrations and candid moments.</p>
-                    </div>
-                </div>
-            </div>
- <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="portfolio-item rounded overflow-hidden">
-                    <img class="img-fluid" src="img/carousel-1.jpg" alt="Wedding Couple">
-                    <div class="portfolio-text bg-light text-center p-4">
-                        <h5 style="color: #5e7267;">A Magical Evening</h5>
-                        <p style="color: #5e7267;">Sunset wedding shoot with romantic vibes.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
-                <div class="portfolio-item rounded overflow-hidden">
-                    <img class="img-fluid" src="img/carousel-2.jpg" alt="Wedding Ceremony">
-                    <div class="portfolio-text bg-light text-center p-4">
-                        <h5 style="color: #5e7267;">Traditional Elegance</h5>
-                        <p style="color: #5e7267;">Capturing rituals and family moments.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="portfolio-item rounded overflow-hidden">
-                    <img class="img-fluid" src="img/carousel-3.jpg" alt="Reception Party">
-                    <div class="portfolio-text bg-light text-center p-4">
-                        <h5 style="color: #5e7267 ;">Reception Glam</h5>
-                        <p style="color: #5e7267 ;">Joyful celebrations and candid moments.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="portfolio-item rounded overflow-hidden">
-                    <img class="img-fluid" src="img/about-1.jpg" alt="Wedding Couple">
-                    <div class="portfolio-text bg-light text-center p-4">
-                        <h5 style="color: #5e7267 ;">A Magical Evening</h5>
-                        <p style="color: #5e7267 ;">Sunset wedding shoot with romantic vibes.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="portfolio-item rounded overflow-hidden">
-                    <img class="img-fluid" src="img/about-2.jpg" alt="Wedding Ceremony">
-                    <div class="portfolio-text bg-light text-center p-4">
-                        <h5 style="color: #5e7267 ;">Traditional Elegance</h5>
-                        <p style="color: #5e7267 ;">Capturing rituals and family moments.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="portfolio-item rounded overflow-hidden">
-                    <img class="img-fluid" src="img/carousel-3.jpg" alt="Reception Party">
-                    <div class="portfolio-text bg-light text-center p-4">
-                        <h5 style="color: #5e7267 ;">Reception Glam</h5>
-                        <p style="color: #5e7267 ;">Joyful celebrations and candid moments.</p>
-                    </div>
-                </div>
-            </div>
-             <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="portfolio-item rounded overflow-hidden">
-                    <img class="img-fluid" src="img/carousel-1.jpg" alt="Wedding Couple">
-                    <div class="portfolio-text bg-light text-center p-4">
-                        <h5 style="color: #5e7267;">A Magical Evening</h5>
-                        <p style="color: #5e7267;">Sunset wedding shoot with romantic vibes.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
-                <div class="portfolio-item rounded overflow-hidden">
-                    <img class="img-fluid" src="img/carousel-2.jpg" alt="Wedding Ceremony">
-                    <div class="portfolio-text bg-light text-center p-4">
-                        <h5 style="color: #5e7267;">Traditional Elegance</h5>
-                        <p style="color: #5e7267;">Capturing rituals and family moments.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="portfolio-item rounded overflow-hidden">
-                    <img class="img-fluid" src="img/carousel-3.jpg" alt="Reception Party">
-                    <div class="portfolio-text bg-light text-center p-4">
-                        <h5 style="color: #5e7267 ;">Reception Glam</h5>
-                        <p style="color: #5e7267 ;">Joyful celebrations and candid moments.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="portfolio-item rounded overflow-hidden">
-                    <img class="img-fluid" src="img/about-1.jpg" alt="Wedding Couple">
-                    <div class="portfolio-text bg-light text-center p-4">
-                        <h5 style="color: #5e7267 ;">A Magical Evening</h5>
-                        <p style="color: #5e7267 ;">Sunset wedding shoot with romantic vibes.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="portfolio-item rounded overflow-hidden">
-                    <img class="img-fluid" src="img/about-2.jpg" alt="Wedding Ceremony">
-                    <div class="portfolio-text bg-light text-center p-4">
-                        <h5 style="color: #5e7267 ;">Traditional Elegance</h5>
-                        <p style="color: #5e7267 ;">Capturing rituals and family moments.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="portfolio-item rounded overflow-hidden">
-                    <img class="img-fluid" src="img/carousel-3.jpg" alt="Reception Party">
-                    <div class="portfolio-text bg-light text-center p-4">
-                        <h5 style="color: #5e7267 ;">Reception Glam</h5>
-                        <p style="color: #5e7267 ;">Joyful celebrations and candid moments.</p>
-                    </div>
-                </div>
-            </div>
-             <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="portfolio-item rounded overflow-hidden">
-                    <img class="img-fluid" src="img/carousel-1.jpg" alt="Wedding Couple">
-                    <div class="portfolio-text bg-light text-center p-4">
-                        <h5 style="color: #5e7267;">A Magical Evening</h5>
-                        <p style="color: #5e7267;">Sunset wedding shoot with romantic vibes.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
-                <div class="portfolio-item rounded overflow-hidden">
-                    <img class="img-fluid" src="img/carousel-2.jpg" alt="Wedding Ceremony">
-                    <div class="portfolio-text bg-light text-center p-4">
-                        <h5 style="color: #5e7267;">Traditional Elegance</h5>
-                        <p style="color: #5e7267;">Capturing rituals and family moments.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="portfolio-item rounded overflow-hidden">
-                    <img class="img-fluid" src="img/carousel-3.jpg" alt="Reception Party">
-                    <div class="portfolio-text bg-light text-center p-4">
-                        <h5 style="color: #5e7267 ;">Reception Glam</h5>
-                        <p style="color: #5e7267 ;">Joyful celebrations and candid moments.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="portfolio-item rounded overflow-hidden">
-                    <img class="img-fluid" src="img/about-1.jpg" alt="Wedding Couple">
-                    <div class="portfolio-text bg-light text-center p-4">
-                        <h5 style="color: #5e7267 ;">A Magical Evening</h5>
-                        <p style="color: #5e7267 ;">Sunset wedding shoot with romantic vibes.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="portfolio-item rounded overflow-hidden">
-                    <img class="img-fluid" src="img/about-2.jpg" alt="Wedding Ceremony">
-                    <div class="portfolio-text bg-light text-center p-4">
-                        <h5 style="color: #5e7267 ;">Traditional Elegance</h5>
-                        <p style="color: #5e7267 ;">Capturing rituals and family moments.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="portfolio-item rounded overflow-hidden">
-                    <img class="img-fluid" src="img/carousel-3.jpg" alt="Reception Party">
-                    <div class="portfolio-text bg-light text-center p-4">
-                        <h5 style="color: #5e7267 ;">Reception Glam</h5>
-                        <p style="color: #5e7267 ;">Joyful celebrations and candid moments.</p>
-                    </div>
-                </div>
-            </div>
-             <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="portfolio-item rounded overflow-hidden">
-                    <img class="img-fluid" src="img/carousel-1.jpg" alt="Wedding Couple">
-                    <div class="portfolio-text bg-light text-center p-4">
-                        <h5 style="color: #5e7267;">A Magical Evening</h5>
-                        <p style="color: #5e7267;">Sunset wedding shoot with romantic vibes.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
-                <div class="portfolio-item rounded overflow-hidden">
-                    <img class="img-fluid" src="img/carousel-2.jpg" alt="Wedding Ceremony">
-                    <div class="portfolio-text bg-light text-center p-4">
-                        <h5 style="color: #5e7267;">Traditional Elegance</h5>
-                        <p style="color: #5e7267;">Capturing rituals and family moments.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="portfolio-item rounded overflow-hidden">
-                    <img class="img-fluid" src="img/carousel-3.jpg" alt="Reception Party">
-                    <div class="portfolio-text bg-light text-center p-4">
-                        <h5 style="color: #5e7267 ;">Reception Glam</h5>
-                        <p style="color: #5e7267 ;">Joyful celebrations and candid moments.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="portfolio-item rounded overflow-hidden">
-                    <img class="img-fluid" src="img/about-1.jpg" alt="Wedding Couple">
-                    <div class="portfolio-text bg-light text-center p-4">
-                        <h5 style="color: #5e7267 ;">A Magical Evening</h5>
-                        <p style="color: #5e7267 ;">Sunset wedding shoot with romantic vibes.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="portfolio-item rounded overflow-hidden">
-                    <img class="img-fluid" src="img/about-2.jpg" alt="Wedding Ceremony">
-                    <div class="portfolio-text bg-light text-center p-4">
-                        <h5 style="color: #5e7267 ;">Traditional Elegance</h5>
-                        <p style="color: #5e7267 ;">Capturing rituals and family moments.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="portfolio-item rounded overflow-hidden">
-                    <img class="img-fluid" src="img/carousel-3.jpg" alt="Reception Party">
-                    <div class="portfolio-text bg-light text-center p-4">
-                        <h5 style="color: #5e7267 ;">Reception Glam</h5>
-                        <p style="color: #5e7267 ;">Joyful celebrations and candid moments.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
         <!-- Portfolio End -->
 
         <!-- Flower Frame Start -->
-        <div class="container-xxl py-3 text-center">
+        <div class="container-xxl py-3 text-center" id="team-section">
             <img src="img/frame.png" alt="Decorative Frame" class="img-fluid"
                 style="max-width: 300px; height: auto; display: inline-block;">
         </div>
         <!-- Flower Frame End -->
 
         <!-- Team Start -->
-<div class="container-fluid">
-  <div class="row g-5 mx-0">
-                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <p class="d-inline-block border rounded-pill py-1 px-4"
-                        style="background: #5e7267; color: #FFF0F5 ;">Meet The Team</p>
-                    <h1 style="color: #5e7267 ;">Our Creative Artists</h1>
+        <section class="py-5 bg-light" id="team-section">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="badge bg-success text-light px-4 py-2 mb-3">Meet The Team</span>
+                    <h2 class="fw-bold">Our Creative <span style="color: #2e8b57;">Artists</span></h2>
+                    <p class="text-muted">Meet the passionate professionals who bring your vision to life with
+                        creativity, expertise, and dedication.</p>
                 </div>
+
                 <div class="row g-4">
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="team-item position-relative rounded overflow-hidden">
-                            <div class="overflow-hidden">
-                                <img class="img-fluid" src="img/team-1.jpg" alt="Photographer">
+                    <!-- Priya -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card team-card border-0 shadow-sm position-relative">
+                            <div class="position-relative">
+                                <img src="img/team-1.jpg" class="card-img-top team-img" alt="Priya Sharma">
+                                <div class="role-icon"><i class="fas fa-camera text-success"></i></div>
                             </div>
-                            <div class="team-text bg-light text-center p-4">
-                                <h5 style="color: #5e7267 ;">Priya Sharma</h5>
-                                <p style="color: #5e7267 ;">Lead Photographer</p>
-                                <div class="team-social text-center">
-                                    <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                            <div class="card-body bg-white text-center">
+                                <h5 class="card-title mb-1">Priya Sharma</h5>
+                                <p class="text-success fw-semibold">Lead Photographer</p>
+                                <p class="text-muted small">Capturing life's precious moments with artistic vision and
+                                    technical expertise.</p>
+                                <div class="social-icons d-flex justify-content-center gap-2">
+                                    <button class="btn btn-outline-success btn-sm rounded-circle"><i
+                                            class="fab fa-facebook-f"></i></button>
+                                    <button class="btn btn-outline-success btn-sm rounded-circle"><i
+                                            class="fab fa-twitter"></i></button>
+                                    <button class="btn btn-outline-success btn-sm rounded-circle"><i
+                                            class="fab fa-instagram"></i></button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="team-item position-relative rounded overflow-hidden">
-                            <div class="overflow-hidden">
-                                <img class="img-fluid" src="img/team-2.jpg" alt="Videographer">
+
+                    <!-- Rahul -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card team-card border-0 shadow-sm position-relative">
+                            <div class="position-relative">
+                                <img src="img/team-1.jpg" class="card-img-top team-img" alt="Rahul Verma">
+                                <div class="role-icon"><i class="fas fa-video text-success"></i></div>
                             </div>
-                            <div class="team-text bg-light text-center p-4">
-                                <h5 style="color: #5e7267 ;">Rahul Verma</h5>
-                                <p style="color: #5e7267 ;">Cinematographer</p>
-                                <div class="team-social text-center">
-                                    <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                            <div class="card-body bg-white text-center">
+                                <h5 class="card-title mb-1">Rahul Verma</h5>
+                                <p class="text-success fw-semibold">Cinematographer</p>
+                                <p class="text-muted small">Creating cinematic experiences that tell your unique story
+                                    beautifully.</p>
+                                <div class="social-icons d-flex justify-content-center gap-2">
+                                    <button class="btn btn-outline-success btn-sm rounded-circle"><i
+                                            class="fab fa-facebook-f"></i></button>
+                                    <button class="btn btn-outline-success btn-sm rounded-circle"><i
+                                            class="fab fa-twitter"></i></button>
+                                    <button class="btn btn-outline-success btn-sm rounded-circle"><i
+                                            class="fab fa-instagram"></i></button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="team-item position-relative rounded overflow-hidden">
-                            <div class="overflow-hidden">
-                                <img class="img-fluid" src="img/team-3.jpg" alt="Editor">
+
+                    <!-- Sneha -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card team-card border-0 shadow-sm position-relative">
+                            <div class="position-relative">
+                                <img src="img/team-1.jpg" class="card-img-top team-img" alt="Sneha Patel">
+                                <div class="role-icon"><i class="fas fa-pen-nib text-success"></i></div>
                             </div>
-                            <div class="team-text bg-light text-center p-4">
-                                <h5 style="color: #5e7267 ;">Sneha Patel</h5>
-                                <p style="color: #5e7267 ;">Editor</p>
-                                <div class="team-social text-center">
-                                    <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                            <div class="card-body bg-white text-center">
+                                <h5 class="card-title mb-1">Sneha Patel</h5>
+                                <p class="text-success fw-semibold">Editor</p>
+                                <p class="text-muted small">Transforming raw footage into masterpieces with creative
+                                    post-production.</p>
+                                <div class="social-icons d-flex justify-content-center gap-2">
+                                    <button class="btn btn-outline-success btn-sm rounded-circle"><i
+                                            class="fab fa-facebook-f"></i></button>
+                                    <button class="btn btn-outline-success btn-sm rounded-circle"><i
+                                            class="fab fa-twitter"></i></button>
+                                    <button class="btn btn-outline-success btn-sm rounded-circle"><i
+                                            class="fab fa-instagram"></i></button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="team-item position-relative rounded overflow-hidden">
-                            <div class="overflow-hidden">
-                                <img class="img-fluid" src="img/team-4.jpg" alt="Coordinator">
+
+                    <!-- Amit -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card team-card border-0 shadow-sm position-relative">
+                            <div class="position-relative">
+                                <img src="img/team-1.jpg" class="card-img-top team-img" alt="Amit Singh">
+                                <div class="role-icon"><i class="fas fa-calendar-alt text-success"></i></div>
                             </div>
-                            <div class="team-text bg-light text-center p-4">
-                                <h5 style="color: #5e7267 ;">Amit Singh</h5>
-                                <p style="color: #5e7267 ;">Event Coordinator</p>
-                                <div class="team-social text-center">
-                                    <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                            <div class="card-body bg-white text-center">
+                                <h5 class="card-title mb-1">Amit Singh</h5>
+                                <p class="text-success fw-semibold">Event Coordinator</p>
+                                <p class="text-muted small">Orchestrating seamless events with meticulous planning and
+                                    coordination.</p>
+                                <div class="social-icons d-flex justify-content-center gap-2">
+                                    <button class="btn btn-outline-success btn-sm rounded-circle"><i
+                                            class="fab fa-facebook-f"></i></button>
+                                    <button class="btn btn-outline-success btn-sm rounded-circle"><i
+                                            class="fab fa-twitter"></i></button>
+                                    <button class="btn btn-outline-success btn-sm rounded-circle"><i
+                                            class="fab fa-instagram"></i></button>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <!-- Call to Action -->
+                <div class="text-center mt-5">
+                    <a href="#" class="btn btn-success px-5 py-2 rounded-pill">Work With Our Team</a>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- Team End -->
 
         <!-- Flower Frame Start -->
-        <div class="container-xxl py-5 text-center">
+        <div class="container-xxl py-5 text-center" id="appointment-section">
             <img src="img/frame.png" alt="Decorative Frame" class="img-fluid" style="max-width: 300px;">
         </div>
         <!-- Flower Frame End -->
 
         <!-- Appointment Start -->
-<div class="container-fluid">
-  <div class="row g-5 mx-0">
+        <div class="container-fluid">
+            <div class="row g-5 mx-0">
                 <div class="row g-5">
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                         <p class="d-inline-block border rounded-pill py-1 px-4"
@@ -720,7 +763,7 @@
         <!-- Appointment End -->
 
         <!-- Flower Frame Start -->
-        <div class="container-xxl py-3 text-center">
+        <div class="container-xxl py-3 text-center" id="testimonial-section">
             <img src="img/frame.png" alt="Decorative Frame" class="img-fluid"
                 style="max-width: 300px; height: auto; display: inline-block;">
         </div>
@@ -728,8 +771,8 @@
 
 
         <!-- Testimonial Start -->
-<div class="container-fluid">
-  <div class="row g-5 mx-0">
+        <div class="container-fluid">
+            <div class="row g-5 mx-0">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                     <p class="d-inline-block border rounded-pill py-1 px-4"
                         style="background: #5e7267; color: #FFF0F5 ;">Testimonials</p>
@@ -772,7 +815,7 @@
         <!-- Testimonial End -->
 
         <!-- Flower Frame Start -->
-        <div class="container-xxl py-3 text-center">
+        <div class="container-xxl py-3 text-center" id="contact-section">
             <img src="img/frame.png" alt="Decorative Frame" class="img-fluid"
                 style="max-width: 300px; height: auto; display: inline-block;">
         </div>
