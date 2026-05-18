@@ -1,6 +1,7 @@
 export const images = {
   frame: new URL('../img/frame.png', import.meta.url).href,
-  hero: new URL('../img/carousel-1.jpg', import.meta.url).href,
+  hero: new URL('../img/header-page.jpg', import.meta.url).href,
+  heroDetail: new URL('../img/carousel-1.jpg', import.meta.url).href,
   aboutOne: new URL('../img/about-1.jpg', import.meta.url).href,
   aboutTwo: new URL('../img/about-2.jpg', import.meta.url).href,
   carouselOne: new URL('../img/carousel-1.jpg', import.meta.url).href,
@@ -52,6 +53,7 @@ export const services = [
     title: 'Pre-Wedding Shoots',
     kicker: 'Before the big day',
     icon: 'heart',
+    image: images.header,
     bestFor: 'Couple stories',
     description: 'Creative location planning, guided posing, and romantic frames that feel personal to your journey.',
     features: ['Moodboard and styling direction', 'Outdoor or studio concepts', 'Short teaser reel options']
@@ -60,6 +62,7 @@ export const services = [
     title: 'Wedding Day Photography',
     kicker: 'Ceremony to reception',
     icon: 'camera',
+    image: images.carouselTwo,
     bestFor: 'Complete coverage',
     description: 'Candid emotions, rituals, portraits, decor, and family memories captured with calm precision.',
     features: ['Lead photographer coverage', 'Family and couple portraits', 'Color-graded final gallery']
@@ -68,6 +71,7 @@ export const services = [
     title: 'Cinematic Wedding Films',
     kicker: 'Story-led edits',
     icon: 'film',
+    image: images.carouselThree,
     bestFor: 'Highlight films',
     description: 'Wedding films with movement, music, vows, laughter, and all the little pauses that matter.',
     features: ['Highlight film and trailer', 'Ceremony and reception edits', 'Clean audio storytelling']
@@ -76,6 +80,7 @@ export const services = [
     title: 'Traditional Ceremony',
     kicker: 'Ritual focused',
     icon: 'sparkles',
+    image: images.aboutOne,
     bestFor: 'Family moments',
     description: 'Thoughtful coverage of haldi, mehendi, sangeet, pheras, blessings, and cultural details.',
     features: ['Multi-event planning', 'Ritual detail coverage', 'Family-first shot lists']
@@ -84,6 +89,7 @@ export const services = [
     title: 'Reception Highlights',
     kicker: 'Celebration energy',
     icon: 'party',
+    image: images.aboutTwo,
     bestFor: 'Dance and decor',
     description: 'Elegant reception coverage with stage entries, speeches, dance floor energy, and decor details.',
     features: ['Low-light reception shooting', 'Decor and venue frames', 'Fast social media selects']
@@ -92,6 +98,7 @@ export const services = [
     title: 'Wedding Albums',
     kicker: 'Printed memories',
     icon: 'album',
+    image: images.heroDetail,
     bestFor: 'Keepsakes',
     description: 'Premium album layouts that turn your favorite photos into a timeless family heirloom.',
     features: ['Curated image selection', 'Elegant album design', 'Ready for gifting']
@@ -149,14 +156,14 @@ export const videos = [
     label: 'Wedding film',
     description: 'A cinematic look at vows, portraits, family emotions, and reception energy.',
     poster: images.header,
-    embedUrl: 'https://player.vimeo.com/video/1103511061'
+    link: 'https://www.youtube.com/@creativewedding_in'
   },
   {
     title: 'Love Story Highlight Edit',
     label: 'Couple story',
     description: 'A softer film style for pre-wedding shoots, couple portraits, and intimate moments.',
     poster: images.carouselThree,
-    embedUrl: 'https://player.vimeo.com/video/1103511061'
+    link: 'https://www.youtube.com/@creativewedding_in'
   }
 ];
 

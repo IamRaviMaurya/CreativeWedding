@@ -27,6 +27,9 @@ export default function Services() {
 
           return (
             <article className="service-card" key={service.title} data-reveal style={{ '--delay': `${index * 70}ms` }}>
+              <div className="service-image">
+                <img src={service.image} alt={`${service.title} by CreativeWedding`} />
+              </div>
               <div className="service-icon" aria-hidden="true">
                 <Icon size={28} />
               </div>

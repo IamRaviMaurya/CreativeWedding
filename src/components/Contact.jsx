@@ -1,6 +1,6 @@
 import React from 'react';
 import { Facebook, Instagram, Mail, MapPin, MessageCircle, Phone, Youtube } from 'lucide-react';
-import { contactDetails, socialLinks } from '../constants';
+import { contactDetails, images, socialLinks } from '../constants';
 import SectionHeading from './SectionHeading';
 
 const iconMap = {
@@ -19,34 +19,44 @@ export default function Contact() {
         copy="Reach the CreativeWedding team for date availability, package details, pre-wedding concepts, or complete wedding coverage."
       />
 
-      <div className="contact-grid">
-        <a href={`tel:${contactDetails.phone.replaceAll(' ', '')}`} className="contact-card" data-reveal>
-          <Phone size={24} aria-hidden="true" />
-          <span>Call</span>
-          <strong>{contactDetails.phone}</strong>
-        </a>
-        <a href={`mailto:${contactDetails.email}`} className="contact-card" data-reveal>
-          <Mail size={24} aria-hidden="true" />
-          <span>Email</span>
-          <strong>{contactDetails.email}</strong>
-        </a>
-        <div className="contact-card" data-reveal>
-          <MapPin size={24} aria-hidden="true" />
-          <span>Studio</span>
-          <strong>{contactDetails.location}</strong>
+      <div className="contact-layout">
+        <div className="contact-photo-panel" data-reveal>
+          <img src={images.carouselOne} alt="CreativeWedding wedding portrait" />
+          <div>
+            <strong>Available for weddings, pre-weddings, rituals, and receptions.</strong>
+            <span>Nagpur based, travelling for stories that need us.</span>
+          </div>
         </div>
-        <div className="contact-card contact-social-card" data-reveal>
-          <MessageCircle size={24} aria-hidden="true" />
-          <span>Follow</span>
-          <div className="contact-socials">
-            {socialLinks.map((link) => {
-              const Icon = iconMap[link.icon] ?? MessageCircle;
-              return (
-                <a key={link.label} href={link.href} aria-label={link.label} target="_blank" rel="noreferrer">
-                  <Icon size={19} aria-hidden="true" />
-                </a>
-              );
-            })}
+
+        <div className="contact-grid">
+          <a href={`tel:${contactDetails.phone.replaceAll(' ', '')}`} className="contact-card" data-reveal>
+            <Phone size={24} aria-hidden="true" />
+            <span>Call</span>
+            <strong>{contactDetails.phone}</strong>
+          </a>
+          <a href={`mailto:${contactDetails.email}`} className="contact-card" data-reveal>
+            <Mail size={24} aria-hidden="true" />
+            <span>Email</span>
+            <strong>{contactDetails.email}</strong>
+          </a>
+          <div className="contact-card" data-reveal>
+            <MapPin size={24} aria-hidden="true" />
+            <span>Studio</span>
+            <strong>{contactDetails.location}</strong>
+          </div>
+          <div className="contact-card contact-social-card" data-reveal>
+            <MessageCircle size={24} aria-hidden="true" />
+            <span>Follow</span>
+            <div className="contact-socials">
+              {socialLinks.map((link) => {
+                const Icon = iconMap[link.icon] ?? MessageCircle;
+                return (
+                  <a key={link.label} href={link.href} aria-label={link.label} target="_blank" rel="noreferrer">
+                    <Icon size={19} aria-hidden="true" />
+                  </a>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>
