@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Aperture, Facebook, Instagram, Menu, MessageCircle, X, Youtube } from 'lucide-react';
 import { navLinks, socialLinks } from '../constants';
+import logo from '../../img/logo.png';
 
 const socialIconMap = {
   facebook: Facebook,
@@ -29,7 +30,7 @@ export default function Header() {
     <header className={scrolled ? 'site-header site-header-scrolled' : 'site-header'}>
       <a className="brand" href="#home" aria-label="CreativeWedding home" onClick={() => setOpen(false)}>
         <span className="brand-mark" aria-hidden="true">
-            <img src="/img/logo.png" alt="CreativeWedding logo" />
+            <img src={logo} alt="CreativeWedding logo" />
         </span>
       </a>
 

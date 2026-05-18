@@ -14,7 +14,8 @@ export const images = {
   teamFour: new URL('../img/team-4.jpg', import.meta.url).href,
   testimonialOne: new URL('../img/testimonial-1.jpg', import.meta.url).href,
   testimonialTwo: new URL('../img/testimonial-2.jpg', import.meta.url).href,
-  testimonialThree: new URL('../img/testimonial-3.jpg', import.meta.url).href
+  testimonialThree: new URL('../img/testimonial-3.jpg', import.meta.url).href,
+  logo: new URL('../img/logo.png', import.meta.url).href
 };
 
 

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { ArrowRight, CalendarDays, Camera, Heart, Sparkles } from 'lucide-react';
 import { images } from '../constants';
+import logo from '../../img/logo.png';
 
 export default function Hero() {
   const [sparkling, setSparkling] = useState(false);
@@ -70,7 +71,7 @@ useEffect(() => {
           </div> */}
 
           <div className="hero-actions">
-            <img src="/img/logo.png" alt="CreativeWedding logo" />
+            <img src={logo} alt="CreativeWedding logo" />
           </div>
 
         </div>
