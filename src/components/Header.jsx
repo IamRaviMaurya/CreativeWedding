@@ -29,11 +29,7 @@ export default function Header() {
     <header className={scrolled ? 'site-header site-header-scrolled' : 'site-header'}>
       <a className="brand" href="#home" aria-label="CreativeWedding home" onClick={() => setOpen(false)}>
         <span className="brand-mark" aria-hidden="true">
-          <Aperture size={22} strokeWidth={2.4} />
-        </span>
-        <span className="brand-copy">
-          <strong>CreativeWedding</strong>
-          <small>Photo and Film</small>
+            <img src="/img/logo.png" alt="CreativeWedding logo" />
         </span>
       </a>
 

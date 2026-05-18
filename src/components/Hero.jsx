@@ -69,6 +69,10 @@ useEffect(() => {
             </a>
           </div> */}
 
+          <div className="hero-actions">
+            <img src="/img/logo.png" alt="CreativeWedding logo" />
+          </div>
+
         </div>
       </div>
     </section>

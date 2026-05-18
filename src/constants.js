@@ -20,10 +20,10 @@ export const images = {
 
 export const navLinks = [
   { label: 'About', href: '#about' },
-  { label: 'Services', href: '#services' },
+  // { label: 'Services', href: '#services' },
   { label: 'Portfolio', href: '#portfolio' },
   { label: 'Films', href: '#films' },
-  { label: 'Team', href: '#team' },
+  // { label: 'Team', href: '#team' },
   { label: 'Reviews', href: '#testimonials' },
   { label: 'Contact', href: '#contact' }
 ];
@@ -201,10 +201,10 @@ export const teamMembers = [
 
 export const testimonials = [
   {
-    name: 'Aarav & Meera',
-    event: 'Nagpur wedding celebration',
-    image: images.testimonialOne,
-    review: 'Absolutely magical. The photos and film captured every emotion, and our families still watch the highlight video together.'
+    name: 'Gauri & Pratik',
+    event: 'Junnar',
+    image: images.heroDetail,
+    review: 'Creative Wedding didn’t just capture our wedding, they captured our emotions. Every photo feels alive and every film takes us back to that exact moment. The team made us feel so comfortable and special throughout the celebration.'
   },
   {
     name: 'Riya & Karan',

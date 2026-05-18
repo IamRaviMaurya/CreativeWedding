@@ -41,10 +41,10 @@ export default function App() {
         <DecorativeFrame />
         <About />
         <DecorativeFrame />
-        <Services />
+        {/* <Services /> */}
         <Portfolio />
         <VideoShowcase />
-        <Team />
+        {/* <Team /> */}
         <Booking />
         <Testimonials />
         <Contact />
