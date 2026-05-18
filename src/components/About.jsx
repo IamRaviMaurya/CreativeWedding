@@ -12,10 +12,10 @@ export default function About() {
         <div className="about-media" data-reveal>
           <img className="about-image-main" src={images.aboutOne} alt="Wedding couple captured by CreativeWedding" />
           <img className="about-image-secondary" src={images.aboutTwo} alt="CreativeWedding ceremony portrait" />
-          <div className="about-badge">
+          {/* <div className="about-badge">
             <Flower2 size={22} aria-hidden="true" />
             <span>Story-led memories</span>
-          </div>
+          </div> */}
         </div>
 
         <div className="about-copy">

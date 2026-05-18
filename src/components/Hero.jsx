@@ -30,7 +30,7 @@ export default function Hero() {
         <div className="hero-copy-block" data-reveal>
           <p className="eyebrow hero-eyebrow">
             <Sparkles size={16} aria-hidden="true" />
-            Nagpur wedding photography and films
+            wedding photography and films
           </p>
           <h1>CreativeWedding</h1>
           <p className="hero-copy">
@@ -47,7 +47,7 @@ export default function Hero() {
             </a>
           </div>
 
-          <div className="hero-highlights" data-reveal>
+          {/* <div className="hero-highlights" data-reveal>
             <div>
               <Camera size={21} aria-hidden="true" />
               <span>Candid photography</span>
@@ -60,10 +60,10 @@ export default function Hero() {
               <CalendarDays size={21} aria-hidden="true" />
               <span>Full-day coverage</span>
             </div>
-          </div>
+          </div> */}
         </div>
 
-        <div className={sparkling ? 'hero-visual is-sparkling' : 'hero-visual'} data-reveal>
+        {/* <div className={sparkling ? 'hero-visual is-sparkling' : 'hero-visual'} data-reveal>
           <div className="hero-feature-frame" onPointerDown={triggerSparkle}>
             <img className="hero-feature-image" src={images.heroDetail} alt="CreativeWedding groom portrait" />
           </div>
@@ -76,7 +76,7 @@ export default function Hero() {
             <strong>Photo + Film</strong>
             <span>One team for every ritual, portrait, and celebration.</span>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
