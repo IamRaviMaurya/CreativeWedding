@@ -825,6 +825,7 @@ p {
   text-transform: uppercase;
 }
 
+
 .service-card > p:not(.card-kicker),
 .service-card li,
 .team-copy p,
@@ -846,27 +847,50 @@ p {
 
 .service-card ul {
   display: grid;
-  gap: 10px;
+  gap: 12px;
   margin: 18px 0 24px;
   padding: 0;
   list-style: none;
+
+  width: 100%;
 }
 
 .service-card li {
   position: relative;
-  padding-left: 20px;
-  line-height: 1.55;
+  padding-left: 34px;
+
+  color: var(--muted);
+  line-height: 1.6;
+  text-align: left;
 }
 
 .service-card li::before {
+  content: "✓";
+
   position: absolute;
-  top: 0.72em;
-  left: 0;
-  width: 8px;
-  height: 8px;
-  content: "";
-  background: var(--warm);
+  left: 10px;
+  top: 3px;
+
+  width: 20px;
+  height: 20px;
+
   border-radius: 50%;
+  background: rgba(94, 114, 103, 0.12);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--sage);
+  font-size: 0.72rem;
+  font-weight: 900;
+}
+
+.service-card {
+  text-align: center;
+}
+.service-card li {
+  padding-left: 50px;
 }
 
 .service-footer {
@@ -1564,6 +1588,7 @@ p {
   .hero-inner {
     grid-template-columns: 1fr;
   }
+  
 
   .hero-visual {
     justify-self: start;

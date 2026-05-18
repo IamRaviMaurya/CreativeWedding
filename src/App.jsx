@@ -37,7 +37,7 @@ export default function App() {
       <Header />
       <main>
         <Hero />
-        <ProofStrip />
+        {/* <ProofStrip /> */}
         <DecorativeFrame />
         <About />
         <DecorativeFrame />
