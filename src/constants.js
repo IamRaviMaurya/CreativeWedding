@@ -26,7 +26,7 @@ export const navLinks = [
   { label: 'Films', href: '#films' },
   // { label: 'Team', href: '#team' },
   { label: 'Reviews', href: '#testimonials' },
-  { label: 'Contact', href: '#contact' }
+  { label: 'Contact', href: '#booking' }
 ];
 
 export const socialLinks = [

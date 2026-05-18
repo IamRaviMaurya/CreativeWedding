@@ -39,15 +39,18 @@ export default function App() {
         <Hero />
         {/* <ProofStrip /> */}
         <DecorativeFrame />
-        <About />
+        <Portfolio />
+       
         <DecorativeFrame />
         {/* <Services /> */}
-        <Portfolio />
+         
         <VideoShowcase />
+        <About />
         {/* <Team /> */}
-        <Booking />
+        
         <Testimonials />
-        <Contact />
+        <Booking />
+        {/* <Contact /> */}
       </main>
       <Footer />
     </>
