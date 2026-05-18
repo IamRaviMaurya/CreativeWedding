@@ -3,6 +3,12 @@ import { useEffect } from 'react';
 export default function useScrollReveal() {
   useEffect(() => {
     const elements = document.querySelectorAll('[data-reveal]');
+
+    if (!('IntersectionObserver' in window)) {
+      elements.forEach((element) => element.classList.add('is-visible'));
+      return undefined;
+    }
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -12,7 +18,7 @@ export default function useScrollReveal() {
           }
         });
       },
-      { threshold: 0.14 }
+      { threshold: 0.16 }
     );
 
     elements.forEach((element) => observer.observe(element));

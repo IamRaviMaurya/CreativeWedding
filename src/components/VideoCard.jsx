@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import { Play } from 'lucide-react';
 
 export default function VideoCard({ video }) {
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [playing, setPlaying] = useState(false);
 
   return (
     <article className="video-card" data-reveal>
       <div className="video-frame">
-        {isPlaying ? (
+        {playing ? (
           <iframe
             src={`${video.embedUrl}?autoplay=1&title=0&byline=0&portrait=0`}
             title={video.title}
@@ -15,21 +15,16 @@ export default function VideoCard({ video }) {
             allowFullScreen
           />
         ) : (
-          <button
-            className="video-poster"
-            type="button"
-            aria-label={`Play ${video.title}`}
-            onClick={() => setIsPlaying(true)}
-          >
+          <button className="video-poster" type="button" aria-label={`Play ${video.title}`} onClick={() => setPlaying(true)}>
             <img src={video.poster} alt="" aria-hidden="true" />
-            <span className="play-pill" aria-hidden="true">
-              <Play size={15} fill="currentColor" />
+            <span className="play-button" aria-hidden="true">
+              <Play size={18} fill="currentColor" />
             </span>
           </button>
         )}
       </div>
       <div className="video-copy">
-        <span>{video.length}</span>
+        <p className="card-kicker">{video.label}</p>
         <h3>{video.title}</h3>
         <p>{video.description}</p>
       </div>

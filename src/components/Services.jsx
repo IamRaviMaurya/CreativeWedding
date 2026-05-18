@@ -1,21 +1,24 @@
 import React from 'react';
-import { Camera, Clapperboard, HeartHandshake } from 'lucide-react';
+import { BookOpen, Camera, Clapperboard, Heart, PartyPopper, Sparkles } from 'lucide-react';
 import { services } from '../constants';
 import SectionHeading from './SectionHeading';
 
 const iconMap = {
+  album: BookOpen,
   camera: Camera,
-  heart: HeartHandshake,
-  film: Clapperboard
+  film: Clapperboard,
+  heart: Heart,
+  party: PartyPopper,
+  sparkles: Sparkles
 };
 
 export default function Services() {
   return (
-    <section id="services" className="section services">
+    <section id="services" className="section services-section">
       <SectionHeading
-        eyebrow="Services"
-        title="Collections for every celebration"
-        copy="Keep names, pricing, deliverables, and highlights editable from a single constants file."
+        eyebrow="Wedding Services"
+        title="Everything your celebration needs"
+        copy="Choose focused coverage for one event or build a complete wedding story across pre-wedding, rituals, reception, films, and albums."
       />
 
       <div className="services-grid">
@@ -23,16 +26,11 @@ export default function Services() {
           const Icon = iconMap[service.icon] ?? Camera;
 
           return (
-            <article
-              key={service.title}
-              className="service-card"
-              data-reveal
-              style={{ '--accent': service.accent, '--delay': `${index * 100}ms` }}
-            >
-              <div className="service-icon">
-                <Icon size={28} aria-hidden="true" />
+            <article className="service-card" key={service.title} data-reveal style={{ '--delay': `${index * 70}ms` }}>
+              <div className="service-icon" aria-hidden="true">
+                <Icon size={28} />
               </div>
-              <span className="service-kicker">{service.kicker}</span>
+              <p className="card-kicker">{service.kicker}</p>
               <h3>{service.title}</h3>
               <p>{service.description}</p>
               <ul>
@@ -41,8 +39,8 @@ export default function Services() {
                 ))}
               </ul>
               <div className="service-footer">
-                <span>Starting at</span>
-                <strong>{service.price}</strong>
+                <span>Best for</span>
+                <strong>{service.bestFor}</strong>
               </div>
             </article>
           );

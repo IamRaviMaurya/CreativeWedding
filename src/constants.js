@@ -1,132 +1,213 @@
+export const images = {
+  frame: new URL('../img/frame.png', import.meta.url).href,
+  hero: new URL('../img/carousel-1.jpg', import.meta.url).href,
+  aboutOne: new URL('../img/about-1.jpg', import.meta.url).href,
+  aboutTwo: new URL('../img/about-2.jpg', import.meta.url).href,
+  carouselOne: new URL('../img/carousel-1.jpg', import.meta.url).href,
+  carouselTwo: new URL('../img/carousel-2.jpg', import.meta.url).href,
+  carouselThree: new URL('../img/carousel-3.jpg', import.meta.url).href,
+  header: new URL('../img/header-page.jpg', import.meta.url).href,
+  teamOne: new URL('../img/team-1.jpg', import.meta.url).href,
+  teamTwo: new URL('../img/team-2.jpg', import.meta.url).href,
+  teamThree: new URL('../img/team-3.jpg', import.meta.url).href,
+  teamFour: new URL('../img/team-4.jpg', import.meta.url).href,
+  testimonialOne: new URL('../img/testimonial-1.jpg', import.meta.url).href,
+  testimonialTwo: new URL('../img/testimonial-2.jpg', import.meta.url).href,
+  testimonialThree: new URL('../img/testimonial-3.jpg', import.meta.url).href
+};
+
 export const navLinks = [
+  { label: 'About', href: '#about' },
+  { label: 'Services', href: '#services' },
   { label: 'Portfolio', href: '#portfolio' },
   { label: 'Films', href: '#films' },
-  { label: 'Services', href: '#services' },
+  { label: 'Team', href: '#team' },
   { label: 'Reviews', href: '#testimonials' },
-  { label: 'Inquiry', href: '#contact' }
+  { label: 'Contact', href: '#contact' }
 ];
 
-export const socialProof = [
-  { value: '340+', label: 'weddings captured' },
-  { value: '14', label: 'destination cities' },
-  { value: '4.9/5', label: 'couple rating' }
+export const socialLinks = [
+  { label: 'WhatsApp', href: 'https://wa.me/919730852258', icon: 'message' },
+  { label: 'Instagram', href: 'https://www.instagram.com/creativewedding.in/', icon: 'instagram' },
+  { label: 'Facebook', href: 'https://www.facebook.com/people/CreativeWeddingin/100068346289517/', icon: 'facebook' },
+  { label: 'YouTube', href: 'https://www.youtube.com/@creativewedding_in', icon: 'youtube' }
 ];
 
-export const galleryImages = [
+export const contactDetails = {
+  phone: '+91 8602908602',
+  alternatePhone: '+91 9730852258',
+  email: 'creativewedding.in@gmail.com',
+  location: 'Nagpur 440003',
+  studioLine: '+91 8484084928'
+};
+
+export const proofItems = [
+  { value: 'Wedding', label: 'photography and candid moments' },
+  { value: 'Film', label: 'cinematic stories and trailers' },
+  { value: 'Albums', label: 'crafted keepsakes for families' }
+];
+
+export const services = [
   {
-    title: 'Golden Vows',
+    title: 'Pre-Wedding Shoots',
+    kicker: 'Before the big day',
+    icon: 'heart',
+    bestFor: 'Couple stories',
+    description: 'Creative location planning, guided posing, and romantic frames that feel personal to your journey.',
+    features: ['Moodboard and styling direction', 'Outdoor or studio concepts', 'Short teaser reel options']
+  },
+  {
+    title: 'Wedding Day Photography',
+    kicker: 'Ceremony to reception',
+    icon: 'camera',
+    bestFor: 'Complete coverage',
+    description: 'Candid emotions, rituals, portraits, decor, and family memories captured with calm precision.',
+    features: ['Lead photographer coverage', 'Family and couple portraits', 'Color-graded final gallery']
+  },
+  {
+    title: 'Cinematic Wedding Films',
+    kicker: 'Story-led edits',
+    icon: 'film',
+    bestFor: 'Highlight films',
+    description: 'Wedding films with movement, music, vows, laughter, and all the little pauses that matter.',
+    features: ['Highlight film and trailer', 'Ceremony and reception edits', 'Clean audio storytelling']
+  },
+  {
+    title: 'Traditional Ceremony',
+    kicker: 'Ritual focused',
+    icon: 'sparkles',
+    bestFor: 'Family moments',
+    description: 'Thoughtful coverage of haldi, mehendi, sangeet, pheras, blessings, and cultural details.',
+    features: ['Multi-event planning', 'Ritual detail coverage', 'Family-first shot lists']
+  },
+  {
+    title: 'Reception Highlights',
+    kicker: 'Celebration energy',
+    icon: 'party',
+    bestFor: 'Dance and decor',
+    description: 'Elegant reception coverage with stage entries, speeches, dance floor energy, and decor details.',
+    features: ['Low-light reception shooting', 'Decor and venue frames', 'Fast social media selects']
+  },
+  {
+    title: 'Wedding Albums',
+    kicker: 'Printed memories',
+    icon: 'album',
+    bestFor: 'Keepsakes',
+    description: 'Premium album layouts that turn your favorite photos into a timeless family heirloom.',
+    features: ['Curated image selection', 'Elegant album design', 'Ready for gifting']
+  }
+];
+
+export const portfolioItems = [
+  {
+    title: 'A Magical Evening',
+    category: 'Pre-Wedding',
+    image: images.carouselOne,
+    alt: 'Wedding couple portrait during a romantic outdoor shoot',
+    size: 'large'
+  },
+  {
+    title: 'Traditional Elegance',
     category: 'Ceremony',
-    size: 'tall',
-    src: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=85',
-    alt: 'Bride and groom celebrating after their wedding ceremony'
+    image: images.carouselTwo,
+    alt: 'Wedding ceremony moment with traditional details',
+    size: 'tall'
   },
   {
-    title: 'Saffron Hour',
-    category: 'Portraits',
-    size: 'wide',
-    src: 'https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=1100&q=85',
-    alt: 'Couple embracing during warm sunset wedding portraits'
-  },
-  {
-    title: 'Velvet Reception',
+    title: 'Reception Glam',
     category: 'Reception',
-    size: 'normal',
-    src: 'https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=900&q=85',
-    alt: 'Luxury wedding reception with glowing lights and floral tables'
+    image: images.carouselThree,
+    alt: 'Wedding reception celebration with warm lighting',
+    size: 'normal'
   },
   {
-    title: 'First Look',
-    category: 'Candid',
-    size: 'normal',
-    src: 'https://images.unsplash.com/photo-1532712938310-34cb3982ef74?auto=format&fit=crop&w=900&q=85',
-    alt: 'Wedding couple sharing an intimate first look moment'
+    title: 'Family Blessings',
+    category: 'Rituals',
+    image: images.aboutOne,
+    alt: 'Family-centered wedding ritual captured with emotion',
+    size: 'normal'
   },
   {
-    title: 'Royal Bloom',
-    category: 'Details',
-    size: 'tall',
-    src: 'https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&w=900&q=85',
-    alt: 'Wedding floral details in a vibrant celebration setting'
+    title: 'Portraits In Bloom',
+    category: 'Couple Portraits',
+    image: images.aboutTwo,
+    alt: 'Bride and groom portrait with wedding styling',
+    size: 'wide'
   },
   {
-    title: 'Dance of Light',
-    category: 'Celebration',
-    size: 'wide',
-    src: 'https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=1100&q=85',
-    alt: 'Wedding guests dancing under colorful reception lighting'
+    title: 'Golden Details',
+    category: 'Decor',
+    image: images.header,
+    alt: 'Wedding decor details and celebration styling',
+    size: 'normal'
   }
 ];
 
 export const videos = [
   {
-    title: 'Morgan + Alex | Wedding Highlight Film',
-    length: 'Highlight film',
-    description: 'A polished resort wedding film reference with ceremony emotion, reception movement, and clean cinematic pacing.',
-    poster: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1200&q=85',
-    embedUrl: 'https://player.vimeo.com/video/875952301'
+    title: 'CreativeWedding Signature Showreel',
+    label: 'Wedding film',
+    description: 'A cinematic look at vows, portraits, family emotions, and reception energy.',
+    poster: images.header,
+    embedUrl: 'https://player.vimeo.com/video/1103511061'
   },
   {
-    title: 'Grace & Jason | Super 8 Wedding Film',
-    length: 'Highlight film',
-    description: 'A textured mountain wedding reference with romantic portraits, natural sound, and nostalgic film energy.',
-    poster: 'https://images.unsplash.com/photo-1529636798458-92182e662485?auto=format&fit=crop&w=1200&q=85',
-    embedUrl: 'https://player.vimeo.com/video/1025562771'
+    title: 'Love Story Highlight Edit',
+    label: 'Couple story',
+    description: 'A softer film style for pre-wedding shoots, couple portraits, and intimate moments.',
+    poster: images.carouselThree,
+    embedUrl: 'https://player.vimeo.com/video/1103511061'
   }
 ];
 
-export const services = [
+export const teamMembers = [
   {
-    title: 'Pre-wedding Story',
-    kicker: 'Editorial romance',
-    price: '$1,200',
-    icon: 'heart',
-    accent: '#ff7a3d',
-    description: 'A styled couple session with moodboards, location planning, and cinematic posing guidance.',
-    features: ['2 creative locations', '80 edited photographs', '1-minute teaser reel']
+    name: 'Priya Sharma',
+    role: 'Lead Photographer',
+    image: images.teamOne,
+    alt: 'Lead photographer portrait',
+    note: 'Guides couples through portraits, rituals, and candid moments with a gentle eye.'
   },
   {
-    title: 'Candid Photography',
-    kicker: 'Emotion-first coverage',
-    price: '$2,800',
-    icon: 'camera',
-    accent: '#7b2ff7',
-    description: 'Natural storytelling for ceremonies, families, portraits, decor, and all the unscripted magic.',
-    features: ['Full-day lead photographer', 'Online gallery', 'Color-graded edits']
+    name: 'Rahul Verma',
+    role: 'Cinematographer',
+    image: images.teamTwo,
+    alt: 'Wedding cinematographer portrait',
+    note: 'Builds emotional films with clean movement, music, and natural storytelling.'
   },
   {
-    title: 'Cinematography',
-    kicker: 'Film-worthy memories',
-    price: '$3,600',
-    icon: 'film',
-    accent: '#d4af37',
-    description: 'Multi-camera wedding films with crisp audio, aerial ambience, and polished highlight edits.',
-    features: ['Highlight film', 'Full ceremony edit', 'Licensed music pacing']
+    name: 'Sneha Patel',
+    role: 'Editor',
+    image: images.teamThree,
+    alt: 'Wedding editor portrait',
+    note: 'Shapes every gallery and film with warm color, rhythm, and polished finishing.'
+  },
+  {
+    name: 'Amit Singh',
+    role: 'Event Coordinator',
+    image: images.teamFour,
+    alt: 'Wedding event coordinator portrait',
+    note: 'Keeps timelines calm so the team catches every important family moment.'
   }
 ];
 
 export const testimonials = [
   {
-    name: 'Anaya & Rohan',
-    event: 'Udaipur destination wedding',
-    review:
-      'The photos feel like our wedding but brighter, warmer, and somehow more emotional than we remembered. The film made our parents cry all over again.'
+    name: 'Aarav & Meera',
+    event: 'Nagpur wedding celebration',
+    image: images.testimonialOne,
+    review: 'Absolutely magical. The photos and film captured every emotion, and our families still watch the highlight video together.'
   },
   {
-    name: 'Priya & Dev',
-    event: 'Mumbai cocktail and ceremony',
-    review:
-      'CreativeWedding handled chaos with so much calm. Every candid frame has personality, color, and timing. We never felt staged or rushed.'
+    name: 'Riya & Karan',
+    event: 'Pre-wedding and reception',
+    image: images.testimonialTwo,
+    review: 'Professional, creative, and so friendly. They made us comfortable on camera and gave us a wedding album we love.'
   },
   {
-    name: 'Maya & Ishaan',
-    event: 'Jaipur palace celebration',
-    review:
-      'Their team caught tiny moments we missed completely. The edit, the music, the portraits, everything felt premium and deeply personal.'
+    name: 'Neha & Siddharth',
+    event: 'Traditional ceremony',
+    image: images.testimonialThree,
+    review: 'The team noticed tiny moments we missed completely. Every ritual, smile, and blessing was captured beautifully.'
   }
 ];
-
-export const contactDetails = {
-  phone: '+1 555 019 4488',
-  email: 'hello@creativewedding.studio',
-  location: 'Available worldwide'
-};

@@ -1,14 +1,14 @@
 import React from 'react';
-import { socialProof } from '../constants';
+import { proofItems } from '../constants';
 
 export default function ProofStrip() {
   return (
     <section className="proof-strip" aria-label="CreativeWedding highlights">
-      {socialProof.map((item) => (
-        <div key={item.label} className="proof-item" data-reveal>
+      {proofItems.map((item, index) => (
+        <article key={item.value} className="proof-item" data-reveal style={{ '--delay': `${index * 90}ms` }}>
           <strong>{item.value}</strong>
           <span>{item.label}</span>
-        </div>
+        </article>
       ))}
     </section>
   );

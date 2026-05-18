@@ -1,28 +1,28 @@
 import React from 'react';
-import { galleryImages } from '../constants';
+import { portfolioItems } from '../constants';
 import SectionHeading from './SectionHeading';
 
 export default function Portfolio() {
   return (
-    <section id="portfolio" className="section portfolio">
+    <section id="portfolio" className="section portfolio-section">
       <SectionHeading
         eyebrow="Portfolio"
-        title="A gallery that feels alive"
-        copy="Color-rich frames, tender pauses, and festival energy arranged in a responsive masonry wall."
+        title="Our wedding stories"
+        copy="A responsive gallery of ceremonies, portraits, rituals, decor, and celebration moments from the CreativeWedding style."
       />
 
-      <div className="masonry-gallery">
-        {galleryImages.map((image, index) => (
+      <div className="portfolio-grid">
+        {portfolioItems.map((item, index) => (
           <figure
-            key={image.title}
-            className={`gallery-card gallery-card-${image.size}`}
+            className={`portfolio-card portfolio-card-${item.size}`}
+            key={item.title}
             data-reveal
-            style={{ '--delay': `${index * 80}ms` }}
+            style={{ '--delay': `${index * 70}ms` }}
           >
-            <img src={image.src} alt={image.alt} />
+            <img src={item.image} alt={item.alt} />
             <figcaption>
-              <span>{image.category}</span>
-              <strong>{image.title}</strong>
+              <span>{item.category}</span>
+              <strong>{item.title}</strong>
             </figcaption>
           </figure>
         ))}

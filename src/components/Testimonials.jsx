@@ -10,54 +10,37 @@ export default function Testimonials() {
   useEffect(() => {
     const timer = window.setInterval(() => {
       setActive((value) => (value + 1) % testimonials.length);
-    }, 5200);
+    }, 5600);
 
     return () => window.clearInterval(timer);
   }, []);
 
   return (
-    <section id="testimonials" className="section testimonials">
+    <section id="testimonials" className="section testimonials-section">
       <SectionHeading
         eyebrow="Testimonials"
-        title="Couples still talking about the edit"
-        copy="A colorful review slider that rotates automatically and remains easy to control."
+        title="What couples say"
+        copy="Couples choose us for the final memories, but they remember the calm, friendly experience just as much."
       />
 
-      <div className="testimonial-shell" data-reveal>
-        <button
-          className="slider-button"
-          type="button"
-          aria-label="Previous testimonial"
-          onClick={() => setActive((value) => (value - 1 + testimonials.length) % testimonials.length)}
-        >
-          &lsaquo;
-        </button>
-
+      <div className="testimonial-layout" data-reveal>
+        <div className="testimonial-image">
+          <img src={current.image} alt={`${current.name} testimonial`} />
+        </div>
         <article className="testimonial-card">
-          <Quote size={42} aria-hidden="true" />
-          <p>&ldquo;{current.review}&rdquo;</p>
-          <div>
-            <strong>{current.name}</strong>
-            <span>{current.event}</span>
-          </div>
+          <Quote size={38} aria-hidden="true" />
+          <p>{current.review}</p>
+          <strong>{current.name}</strong>
+          <span>{current.event}</span>
         </article>
-
-        <button
-          className="slider-button"
-          type="button"
-          aria-label="Next testimonial"
-          onClick={() => setActive((value) => (value + 1) % testimonials.length)}
-        >
-          &rsaquo;
-        </button>
       </div>
 
-      <div className="slider-dots" role="tablist" aria-label="Choose testimonial">
+      <div className="testimonial-dots" role="tablist" aria-label="Choose testimonial">
         {testimonials.map((testimonial, index) => (
           <button
             key={testimonial.name}
-            type="button"
             className={active === index ? 'is-active' : ''}
+            type="button"
             aria-label={`Show review from ${testimonial.name}`}
             aria-pressed={active === index}
             onClick={() => setActive(index)}
