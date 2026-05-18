@@ -17,6 +17,7 @@ export const images = {
   testimonialThree: new URL('../img/testimonial-3.jpg', import.meta.url).href
 };
 
+
 export const navLinks = [
   { label: 'About', href: '#about' },
   { label: 'Services', href: '#services' },

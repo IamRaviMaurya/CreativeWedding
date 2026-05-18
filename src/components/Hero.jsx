@@ -10,11 +10,33 @@ export default function Hero() {
     return () => window.clearTimeout(sparkleTimer.current);
   }, []);
 
-  function triggerSparkle() {
+  function triggerSparkle({ images }) {
     setSparkling(true);
     window.clearTimeout(sparkleTimer.current);
     sparkleTimer.current = window.setTimeout(() => setSparkling(false), 1200);
   }
+
+  const heroImages = [
+    images.aboutOne,
+    images.aboutTwo,
+    images.hero,
+    images.carouselTwo,
+    images.carouselThree,
+    images.teamOne,
+    images.teamTwo,
+    images.teamThree,
+    images.teamFour
+  ];
+
+const [currentImage, setCurrentImage] = useState(0);
+
+useEffect(() => {
+  const interval = setInterval(() => {
+    setCurrentImage((prev) => (prev + 1) % heroImages.length);
+  }, 3000);
+
+  return () => clearInterval(interval);
+}, []);
 
   return (
     <section
@@ -23,7 +45,7 @@ export default function Hero() {
       aria-label="CreativeWedding"
       onPointerDown={triggerSparkle}
     >
-      <img className="hero-fallback" src={images.hero} alt="CreativeWedding couple portrait by the water" />
+      <img src={heroImages[currentImage]} alt="CreativeWedding" className="hero-fallback" />
       <div className="hero-overlay" aria-hidden="true" />
 
       <div className="hero-inner">
