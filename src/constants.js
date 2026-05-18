@@ -39,7 +39,7 @@ export const contactDetails = {
   alternatePhone: '+91 9730852258',
   email: 'creativewedding.in@gmail.com',
   location: 'Nagpur 440003',
-  studioLine: '+91 8484084928'
+  studioLine: '+91 8602908602'
 };
 
 export const proofItems = [

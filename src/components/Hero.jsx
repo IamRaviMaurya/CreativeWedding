@@ -47,36 +47,7 @@ export default function Hero() {
             </a>
           </div>
 
-          {/* <div className="hero-highlights" data-reveal>
-            <div>
-              <Camera size={21} aria-hidden="true" />
-              <span>Candid photography</span>
-            </div>
-            <div>
-              <Heart size={21} aria-hidden="true" />
-              <span>Pre-wedding stories</span>
-            </div>
-            <div>
-              <CalendarDays size={21} aria-hidden="true" />
-              <span>Full-day coverage</span>
-            </div>
-          </div> */}
         </div>
-
-        {/* <div className={sparkling ? 'hero-visual is-sparkling' : 'hero-visual'} data-reveal>
-          <div className="hero-feature-frame" onPointerDown={triggerSparkle}>
-            <img className="hero-feature-image" src={images.heroDetail} alt="CreativeWedding groom portrait" />
-          </div>
-          <div className="hero-visual-strip" aria-label="Wedding story previews">
-            <img src={images.carouselTwo} alt="Traditional wedding couple" />
-            <img src={images.carouselThree} alt="Wedding reception portrait" />
-            <img src={images.aboutTwo} alt="Creative couple portrait" />
-          </div>
-          <div className="hero-floating-note">
-            <strong>Photo + Film</strong>
-            <span>One team for every ritual, portrait, and celebration.</span>
-          </div>
-        </div> */}
       </div>
     </section>
   );
