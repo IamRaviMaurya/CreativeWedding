@@ -54,11 +54,11 @@ useEffect(() => {
             <Sparkles size={16} aria-hidden="true" />
             wedding photography and films
           </p> */}
-          <h1>CreativeWedding</h1>
+          {/* <h1>CreativeWedding</h1>
           <p className="hero-copy">
             We preserve your wedding with graceful photography, cinematic films, family-first coverage, and albums made
             to be held for years.
-          </p>
+          </p> */}
           {/* <div className="hero-actions">
             <a className="button button-primary" href="#booking">
               Reserve Your Date
