@@ -50,16 +50,16 @@ useEffect(() => {
 
       <div className="hero-inner">
         <div className="hero-copy-block" data-reveal>
-          <p className="eyebrow hero-eyebrow">
+          {/* <p className="eyebrow hero-eyebrow">
             <Sparkles size={16} aria-hidden="true" />
             wedding photography and films
-          </p>
+          </p> */}
           <h1>CreativeWedding</h1>
           <p className="hero-copy">
             We preserve your wedding with graceful photography, cinematic films, family-first coverage, and albums made
             to be held for years.
           </p>
-          <div className="hero-actions">
+          {/* <div className="hero-actions">
             <a className="button button-primary" href="#booking">
               Reserve Your Date
               <ArrowRight size={18} aria-hidden="true" />
@@ -67,7 +67,7 @@ useEffect(() => {
             <a className="button button-soft" href="#portfolio">
               View Wedding Stories
             </a>
-          </div>
+          </div> */}
 
         </div>
       </div>
