@@ -1,10 +1,9 @@
 export const images = {
     // Aniruddha and Debolina
     oneDayEvent1: new URL('../img/one_day_event/Aniruddha_and_debolina/_DSC7841.jpg', import.meta.url).href,
-    oneDayEvent2: new URL('../img/one_day_event/Aniruddha_and_debolina/_DSC7888.jpg', import.meta.url).href,
     oneDayEvent3: new URL('../img/one_day_event/Aniruddha_and_debolina/_DSC7969.jpg', import.meta.url).href,
     oneDayEvent4: new URL('../img/one_day_event/Aniruddha_and_debolina/_DSC7978.jpg', import.meta.url).href,
-    oneDayEvent5: new URL('../img/one_day_event/Aniruddha_and_debolina/_DSC7988.jpg', import.meta.url).href,
+    oneDayEvent5: new URL('../img/one_day_event/Aniruddha_and_debolina/_DSC7888.jpg', import.meta.url).href,
     oneDayEvent6: new URL('../img/one_day_event/Aniruddha_and_debolina/_DSC8261.jpg', import.meta.url).href,
     oneDayEvent7: new URL('../img/one_day_event/Aniruddha_and_debolina/_DSC8274.jpg', import.meta.url).href,
     oneDayEvent8: new URL('../img/one_day_event/Aniruddha_and_debolina/_DSC8595.jpg', import.meta.url).href,

@@ -1,5 +1,5 @@
 import React from 'react';
-import { CalendarDays, Mail, Phone } from 'lucide-react';
+import { CalendarDays, Mail, Phone, MessageCircle } from 'lucide-react';
 import { contactDetails, services } from '../constants';
 import SectionHeading from './SectionHeading';
 
@@ -16,11 +16,22 @@ export default function Booking() {
           />
 
           <div className="booking-contact" data-reveal>
-            <a href={`tel:${contactDetails.studioLine.replaceAll(' ', '')}`}>
+            <a
+              href={`https://wa.me/${contactDetails.studioLine.replace(/\D/g, '')}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <MessageCircle size={22} aria-hidden="true" />
+              <span>
+                WhatsApp Us Now
+                <strong>{contactDetails.studioLine}</strong>
+              </span>
+            </a>
+            <a href={`tel:${contactDetails.alternatePhone.replaceAll(' ', '')}`}>
               <Phone size={22} aria-hidden="true" />
               <span>
                 Call Us Now
-                <strong>{contactDetails.studioLine}</strong>
+                <strong>{contactDetails.alternatePhone}</strong>
               </span>
             </a>
             <a href={`mailto:${contactDetails.email}`}>

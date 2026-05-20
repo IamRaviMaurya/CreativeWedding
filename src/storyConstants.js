@@ -16,15 +16,15 @@ export const featuredStories = [
     reviewText: '"Creative Wedding didn’t just capture our wedding, they captured our emotions. Every photo feels alive and every film takes us back to that exact moment."',
     reviewAuthor: 'Aniruddha & Debolina',
     gallery: [
-      images.oneDayEvent2, images.oneDayEvent3, images.oneDayEvent4, 
+      images.oneDayEvent3, images.oneDayEvent4,
       images.oneDayEvent5, images.oneDayEvent6, images.oneDayEvent7,
-      images.oneDayEvent8, images.oneDayEvent9, images.oneDayEvent10
+      images.oneDayEvent8, images.oneDayEvent9, images.oneDayEvent10, images.oneDayEvent11
     ]
   },
   {
     id: 'himanshu-ankita',
     size: 'tall',
-    featuredImage: images.oneDayEvent12,
+    featuredImage: images.oneDayEvent14,
     title: 'Himanshu & Ankita',
     venue: 'One Day Event Celebration',
     outfitsBride: 'Anita Dongre',
@@ -35,7 +35,7 @@ export const featuredStories = [
     reviewText: '"Professional, creative, and so friendly. They made us comfortable on camera and gave us a wedding album we love."',
     reviewAuthor: 'Himanshu & Ankita',
     gallery: [
-      images.oneDayEvent13, images.oneDayEvent14, images.oneDayEvent15, 
+      images.oneDayEvent13, images.oneDayEvent12, images.oneDayEvent15,
       images.oneDayEvent16, images.oneDayEvent17, images.oneDayEvent18,
       images.oneDayEvent19, images.oneDayEvent20, images.oneDayEvent21
     ]
@@ -110,6 +110,40 @@ export const featuredStories = [
     gallery: [
       constantsImages.carouselThree, constantsImages.teamOne, constantsImages.aboutTwo,
       constantsImages.carouselOne, constantsImages.header, constantsImages.teamThree
+    ]
+  },
+  {
+    id: 'vaishnavi-deekshith',
+    size: 'large',
+    featuredImage: images.oneDayEvent25,
+    title: 'Vaishnavi & Deekshith',
+    venue: 'Taj Mahal Palace, Mumbai',
+    outfitsBride: 'Sabyasachi Leheria',
+    outfitsGroom: 'Tarun Tahiliani Sherwani',
+    mua: 'Daniel Bauer Academy',
+    planners: 'Wedding Design Company',
+    storyText: 'A beautiful palace wedding filled with rich details, colorful rituals, and heartwarming moments. From the pre-wedding laughter to the grand pheras, every second was a perfect expression of their love story.',
+    reviewText: '"Every image captured by CreativeWedding is a masterpiece. They didn\'t just document the event, they created visual poetry."',
+    reviewAuthor: 'Vaishnavi & Deekshith',
+    gallery: [
+      images.oneDayEvent25, images.oneDayEvent26, images.oneDayEvent27, images.oneDayEvent28
+    ]
+  },
+  {
+    id: 'rituals-of-love',
+    size: 'wide',
+    featuredImage: constantsImages.aboutOne,
+    title: 'Family Blessings',
+    venue: 'Devi Temple Hall',
+    outfitsBride: 'Traditional Silk Kanjeevaram',
+    outfitsGroom: 'Traditional Silk Veshti',
+    mua: 'Local Artist',
+    planners: 'Family Managed',
+    storyText: 'A soulful union steeped in traditions and close family bonds. Every blessing, every holy thread, and the warm smiles of elders painted a picture of deep devotion and familial warmth.',
+    reviewText: '"They captured the spiritual essence of our ceremonies so beautifully. The close-ups and candid emotional frames are outstanding."',
+    reviewAuthor: 'Ananya & Rishabh',
+    gallery: [
+      constantsImages.aboutOne, constantsImages.carouselTwo, constantsImages.aboutTwo, constantsImages.carouselThree
     ]
   }
 ];

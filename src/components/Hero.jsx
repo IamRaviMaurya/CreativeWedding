@@ -29,15 +29,15 @@ export default function Hero() {
     images.teamFour
   ];
 
-const [currentImage, setCurrentImage] = useState(0);
+  const [currentImage, setCurrentImage] = useState(0);
 
-useEffect(() => {
-  const interval = setInterval(() => {
-    setCurrentImage((prev) => (prev + 1) % heroImages.length);
-  }, 3000);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % heroImages.length);
+    }, 3000);
 
-  return () => clearInterval(interval);
-}, []);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section
@@ -70,9 +70,9 @@ useEffect(() => {
             </a>
           </div> */}
 
-          <div className="hero-actions">
+          {/* <div className="hero-actions">
             <img src={logo} alt="CreativeWedding logo" />
-          </div>
+          </div> */}
 
         </div>
       </div>

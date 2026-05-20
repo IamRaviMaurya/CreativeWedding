@@ -1,6 +1,7 @@
 import React from 'react';
 import { Aperture, ArrowUpRight } from 'lucide-react';
 import { contactDetails, navLinks, services } from '../constants';
+import logo from '../../img/logo.png';
 
 export default function Footer() {
   return (
@@ -11,10 +12,11 @@ export default function Footer() {
             <span className="brand-mark" aria-hidden="true">
               <Aperture size={21} strokeWidth={2.4} />
             </span>
-            <span className="brand-copy">
-              <strong>CreativeWedding</strong>
-              <small>Photo and Film</small>
-            </span>
+            <a className="brand" href="#home" aria-label="CreativeWedding home" onClick={() => setOpen(false)}>
+              <span className="brand-mark" aria-hidden="true">
+                <img src={logo} alt="CreativeWedding logo" />
+              </span>
+            </a>
           </a>
           <p>Wedding photography, cinematic films, and handcrafted albums for celebrations filled with heart.</p>
         </div>
