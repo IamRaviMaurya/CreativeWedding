@@ -916,19 +916,22 @@ p {
 .portfolio-grid {
   display: grid;
   grid-auto-flow: dense;
-  grid-auto-rows: 180px;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 18px;
+  grid-auto-rows: clamp(190px, 18vw, 250px);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(16px, 2vw, 24px);
+  align-items: stretch;
 }
 
 .portfolio-card {
   position: relative;
   min-height: 0;
+  height: 100%;
   margin: 0;
   overflow: hidden;
   background: var(--sage-soft);
   border-radius: var(--radius);
   box-shadow: 0 18px 44px rgba(64, 82, 71, 0.14);
+  isolation: isolate;
 }
 
 .portfolio-card-large {
